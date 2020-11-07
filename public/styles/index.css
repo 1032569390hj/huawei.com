@@ -1,0 +1,34 @@
+.shortcut {
+  height: 36px;
+  width: 100%;
+  line-height: 36px;
+  background: #2e2828;
+}
+.shortcut .s_sub .l_ {
+  height: 100%;
+}
+.shortcut .s_sub .l_ > li {
+  height: 100%;
+  float: left;
+  padding: 0 8px;
+}
+.shortcut .s_sub .l_ > li > a {
+  color: #afafaf;
+  font-size: 12px;
+}
+.shortcut .s_sub .l_ > li:nth-of-type(8) {
+  color: #afafaf;
+  font-size: 12px;
+}
+.shortcut .s_main .r_ {
+  height: 100%;
+}
+.shortcut .s_main .r_ > li {
+  height: 100%;
+  float: left;
+  padding: 0 8px;
+}
+.shortcut .s_main .r_ > li > a {
+  color: #afafaf;
+  font-size: 12px;
+}

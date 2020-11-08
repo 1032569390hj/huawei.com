@@ -9,7 +9,7 @@ var mySwiper = new Swiper('.swiper-container', {
   paginationClickable: true,
   prevButton:'.swiper-button-prev',
   nextButton:'.swiper-button-next',
-  // fade: {
-  //   crossFade: true,
-  // }
+  fade: {
+    crossFade: true,
+  }
 })

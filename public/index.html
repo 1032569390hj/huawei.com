@@ -6,6 +6,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="./styles/common.css">
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/swiper-3.4.2.min.css">
+  <script src="./js/index.js" type="module"></script>
 </head>
 <body>
   <div class="huawei">
@@ -23,21 +25,69 @@
             <li><a href="#">V码(优购码)</a></li>
             <li><a href="#">企业购</a></li>
             <li><a href="#">Select Region</a></li>
-            <li class="more">更多精彩</li>
+            <li class="more"><a href="#">更多精彩</a></li>
           </ul>
         </div>
         <!-- 右边导航 -->
         <div class="s_main right">
           <ul class="clearfix r_">
-            <li><a href="#">登录</a></li>
+            <li><a href="#">请登录</a></li>
             <li><a href="#">注册</a></li>
             <li><a href="#">我的订单</a></li>
             <li><a href="#">客户服务</a></li>
             <li><a href="#">网站导航</a></li>
             <li><a href="#">手机版</a></li>
+            <li class="shopp-cart"><a href="#">购物车(<span>0</span>)</a></li>
           </ul>
         </div>
       </div>
+    </div>
+    <!-- 头部导航 -->
+    <div class="header">
+      <div class="layout clearfix">
+        <!-- 左边 -->
+        <div class="left">
+          <div class="logol">
+            <a href="#"><img src="./img/SXppnESYv4K11DBxDFc2.png" alt=""></a>
+          </div>
+          <div class="nav">
+            <ul class="nav-list">
+              <li class="img"><a href="#"><img src="./img/GrguiqzHENWVYHYWyHBM.png" alt=""></a></li>
+              <li class="img"><a href="#"><img src="./img/AHwTUFRpDSQyuIZ7tLJz.png" alt=""></a></li>
+              <li><a href="#">P40系列</a></li>
+              <li><a href="#">荣耀30</a></li>
+              <li><a href="#">智能家居</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 右边 -->
+        <div class="right">
+          <form action="">
+            <input type="text" id="search-kw" autocomplete="off" class="sr_">
+            <input type="button" value="&#xe628;" class="btn iconfont">
+          </form>
+          <div class="search-bar-key">
+            <a href="#">Mate40 系列</a>
+            <a href="#">荣耀30</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="swiper-container hw-banner-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#"><img src="./img/banner1.jpg" /></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./img/banner2.jpg" /></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./img/banner3.png" /></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./img/banner4.jpg" /></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./img/banner5.jpg" /></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./img/banner6.jpg" /></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./img/banner7.jpg" /></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./img/banner8.jpg" /></a></div>
+      </div>
+      <div class="swiper-pagination"></div> <!-- 小圆点 -->
+      <div class="swiper-button-prev btns">&gt;</div> <!-- 上一张 -->
+      <div class="swiper-button-next btns">&lt;</div> <!-- 下一张 -->
     </div>
   </div>
 </body>

@@ -23,6 +23,7 @@
 
 img{
   border: 0px;
+  display: block;
 }
 li{
   list-style: none;

@@ -439,3 +439,167 @@
 .main .home-channel .home-channel-list .s3 .public-content > ul > .l3 > a > .s_img img {
   left: -310px;
 }
+.main .bottomimage {
+  position: absolute;
+  box-sizing: border-box;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.main .bottomimage > a {
+  display: block;
+  width: 50%;
+  flex: 1;
+}
+.main .bottomimage > a:nth-of-type(1) {
+  position: relative;
+}
+.main .bottomimage > a:nth-of-type(1) img {
+  position: absolute;
+  right: 0;
+}
+.main .one {
+  padding-top: 40px;
+}
+.main .one .home-promo-list {
+  display: flex;
+  margin-bottom: 13px;
+}
+.main .one .home-promo-list > li {
+  width: 290px;
+  height: 200px;
+  border-radius: 20px;
+  margin-left: 13px;
+}
+.main .one .home-promo-list > li:nth-of-type(1) {
+  margin-left: 0;
+}
+.main .one .home-promo-list > li > a {
+  display: block;
+  height: 200px;
+  border-radius: 10px;
+}
+.main .one .home-promo-list > li > a:hover {
+  box-shadow: 0 2px 26px rgba(0, 0, 0, 0.1);
+}
+.main .one .home-promo-list > li > a > img {
+  height: 200px;
+  width: 290px;
+  border-radius: 10px;
+}
+.main .two .title {
+  color: #333;
+  padding: 27px 0 13px 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+.main .two .title h2 {
+  font-weight: 400;
+  color: #3a3a3a;
+}
+.main .two .hot_list {
+  display: flex;
+  width: 232px;
+  height: auto;
+}
+.main .two .hot_list .hot_l > a {
+  width: 232px;
+  border-radius: 10px;
+}
+.main .two .hot_list .hot_l > a > img {
+  width: 232px;
+  border-radius: 10px;
+}
+.main .two .hot_list .hot_l > a > img:hover {
+  box-shadow: 0 2px 26px rgba(0, 0, 0, 0.1);
+}
+.main .two .hot_list .hot_r {
+  width: 968px;
+}
+.main .two .hot_list .hot_r > ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 968px;
+}
+.main .two .hot_list .hot_r > ul > li {
+  width: 230px;
+  height: 290px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.main .two .hot_list .hot_r > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #3a3a3a;
+  border-radius: 10px;
+}
+.main .two .hot_list .hot_r > ul > li > a:hover {
+  box-shadow: 0 2px 26px rgba(0, 0, 0, 0.1);
+}
+.main .two .hot_list .hot_r > ul > li > a .grid-img {
+  width: 150px;
+  height: 150px;
+  margin: 35px auto 0;
+}
+.main .two .hot_list .hot_r > ul > li > a .grid-img > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.main .two .hot_list .hot_r > ul > li > a .grid-title {
+  width: 210px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-top: 12px;
+  height: 21px;
+  line-height: 21px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .two .hot_list .hot_r > ul > li > a .grid-desc {
+  color: #777;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0 10px;
+  margin: 2px 20px 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .two .hot_list .hot_r > ul > li > a .grid-price {
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #cc0e11;
+}
+.main .two .hot_list .hot_r > ul > li > a .grid-tips {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.main .two .hot_list .hot_r > ul > li > a .grid-tips > span {
+  display: inline-block;
+  font-size: 12px;
+  background: #ff8486;
+  padding: 0 9px;
+  margin: 0 auto;
+  height: 22px;
+  line-height: 22px;
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+}

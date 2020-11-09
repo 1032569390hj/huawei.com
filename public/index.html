@@ -25,7 +25,17 @@
             <li><a href="#">V码(优购码)</a></li>
             <li><a href="#">企业购</a></li>
             <li><a href="#">Select Region</a></li>
-            <li class="more"><a href="#">更多精彩</a></li>
+            <li class="more bg">
+              <p><span>更多精彩</span></p>
+              <div class="drop_down">
+                <dl>
+                  <dt><a href="#">EMUI</a></dt>
+                  <dt><a href="#">应用市场</a></dt>
+                  <dt><a href="#">华为终端云空间</a></dt>
+                  <dt><a href="#">开发者联盟</a></dt>
+                </dl>
+              </div>
+            </li>
           </ul>
         </div>
         <!-- 右边导航 -->
@@ -34,10 +44,106 @@
             <li><a href="#">请登录</a></li>
             <li><a href="#">注册</a></li>
             <li><a href="#">我的订单</a></li>
-            <li><a href="#">客户服务</a></li>
-            <li><a href="#">网站导航</a></li>
-            <li><a href="#">手机版</a></li>
-            <li class="shopp-cart"><a href="#">购物车(<span>0</span>)</a></li>
+            <li class="servers bg">
+              <p><span>客户服务</span></p>
+              <div class="drop_down">
+                <dl>
+                  <dt><a href="#">服务中心</a></dt>
+                  <dt><a href="#">联系客服</a></dt>
+                </dl>
+              </div>
+            </li>
+            <li class="websit">
+              <p><span>网站导航</span></p>
+              <div class="drop_down">
+                <div class="dropdown-navs clearfix">
+                  <div class="dropdown-navs-icon left">
+                    <a href="#"><i></i>商城首页</a>
+                  </div>
+                  <div class="dp_ left">
+                    <div class="title">频道</div>
+                    <div class="dp_list clearfix">
+                      <div class="left"><a href="#">华为专区</a></div>
+                      <div class="left"><a href="#">荣耀专区</a></div>
+                      <div class="left"><a href="#">企业购</a></div>
+                    </div>
+                  </div>
+                  <div class="dp_ left">
+                    <div class="title">频道</div>
+                    <div class="dp_list clearfix">
+                      <div class="left"><a href="#">手机</a></div>
+                      <div class="left"><a href="#">笔记本</a></div>
+                      <div class="left"><a href="#">平板</a></div>
+                      <div class="left"><a href="#">智能穿越</a></div>
+                      <div class="left"><a href="#">智能家居</a></div>
+                      <div class="left"><a href="#">智能屏</a></div>
+                      <div class="left"><a href="#">耳机音箱</a></div>
+                      <div class="left"><a href="#">热销配件</a></div>
+                      <div class="left"><a href="#">生态产品</a></div>
+                      <div class="left"><a href="#">增值服务</a></div>
+                    </div>
+                  </div>
+                  <div class="dp_ left">
+                    <div class="title">增值服务</div>
+                    <div class="dp_list clearfix">
+                      <div class="left"><a href="#">以旧换新</a></div>
+                      <div class="left"><a href="#">不狗保障</a></div>
+                      <div class="left"><a href="#">一口价换电池</a></div>
+                    </div>
+                  </div>
+                  <div class="dp_ left">
+                    <div class="title">增值服务</div>
+                    <div class="dp_list clearfix">
+                      <div class="left"><a href="#">会员频道</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="phone">
+              <p><span>手机版</span></p>
+              <div class="drop_down">
+                <div class="drp">
+                  <div class="code1 clearfix">
+                    <a href="#" class="left"><img src="https://res.vmallres.com/pimages//pages/cdnImages/FWETOIrFlCrX4xuB8E16.png" alt=""></a>
+                    <div class="code-info left">
+                      <h2>华为商城App</h2>
+                      <p class="red">新人专享好礼<br>最高5000积分</p>
+                      <span class="icon-andrid left mgr-5"></span>
+                      <span class="icon-wechat left mgr-5"></span>
+                      <span class="icon-ios left"></span>
+                    </div>
+                  </div>
+                  <div class="code1 clearfix code2">
+                    <a href="#" class="left"><img src="https://res.vmallres.com/pimages/sale/2018-11/20181116180507506.jpg" alt=""></a>
+                    <div class="code-info left">
+                      <h2>华为商城公众号</h2>
+                      <p class="red">微信扫一扫</p>
+                      <span class="icon-wechat left mgr-5"></span>
+                    </div>
+                  </div>
+                  <div class="code1 clearfix code2">
+                    <a href="#" class="left"><img src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg" alt=""></a>
+                    <div class="code-info left">
+                      <h2>微信小程序</h2>
+                      <span class="icon-wechat left mgr-5"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="shopp-cart">
+              <a><span>购物车(<span>0</span>)</span></a>
+              <div class="drop_down">
+                <div class="drp">
+                  <div class="minicart_empty">
+                    <p><span class="icon-minicart"></span></p>
+                    <p id="cartinfo">您的购物车是空的，赶紧选购吧</p>
+                  </div>
+                  <div class="minicart-list"></div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -78,7 +184,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide"><a href="#"><img src="./img/banner1.jpg" /></a></div>
         <div class="swiper-slide"><a href="#"><img src="./img/banner2.jpg" /></a></div>
-        <div class="swiper-slide"><a href="#"><img src="./img/banner3.png" /></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./img/banner3.jpg" /></a></div>
         <div class="swiper-slide"><a href="#"><img src="./img/banner4.jpg" /></a></div>
         <div class="swiper-slide"><a href="#"><img src="./img/banner5.jpg" /></a></div>
         <div class="swiper-slide"><a href="#"><img src="./img/banner6.jpg" /></a></div>
@@ -95,33 +201,561 @@
         <ol class="category-list">
           <li class="category-item">
             <a href="#"><span>手机</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/14651510730611515641.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/Dfv6Z1jNUpkSdQEfjU40.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/JtWD6wvaxu0qmHbN2tbO.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/wJHIfRVWj3kjLp9RoTBN.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/93515799859519751539.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/J0jm7RuLopoqLL6j9nWc.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/BcIFunByzSBaydhI8X8T.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/1NS2TBQr6a8EXKAJ8L4y.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/RekgcFmB36D9LlwLKmtt.png" alt="">
+                    <p><span>HUAWEI Mate系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>笔记本</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/RfnzRjvwIx1VTVm8xHfk.png" alt="">
+                    <p><span>华为MateBook X系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/plqBwqiWNT7w3S1oHify.png" alt="">
+                    <p><span>华为MateBook系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/tDI1s1C6u0UNK3kpjX35.png" alt="">
+                    <p><span>华为MateBook D系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/91536469069516463519.png" alt="">
+                    <p><span>华为MateBook B系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/86661944200614916668.png" alt="">
+                    <p><span>荣耀猎人游戏本系列</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/w1o5IBLA7nNHhuMb2wTl.png" alt="">
+                    <p><span>荣耀MagicBook系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/hTG8axcpAcm4rlc953p1.png" alt="">
+                    <p><span>荣耀MagicBook Pro系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/76194353489515349167.png" alt="">
+                    <p><span>个人电脑配件</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/53990553489515509935.jpg" alt="">
+                    <p><span>电脑包</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>平板</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/SoXonWnoeMUuz9KZRGyw.png" alt="">
+                    <p><span>华为MatePad 系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/8wlL4vrACOekn5kexj47.jpg" alt="">
+                    <p><span>荣耀 V系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/xrtZtMAu7qwZRV7drG4A.png" alt="">
+                    <p><span>华为畅享 系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/LgNX0tnzWTb8Mu3xanaG.png" alt="">
+                    <p><span>荣耀数字系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/86661944200614916668.png" alt="">
+                    <p><span>荣耀猎人游戏本系列</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/6bQtXCQDRZ8480l6N1Eo.png" alt="">
+                    <p><span>荣耀畅玩系列</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>智能穿戴&VR</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/bvJbZEMQTr1qy29qnvxZ.png" alt="">
+                    <p><span>智能手表</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/sYl3EZsnaJp74kySK0uW.png" alt="">
+                    <p><span>儿童手表</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/Op9zTFnetpE2UBz72lZ6.png" alt="">
+                    <p><span>智能手环</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/7rB1eW3yTzlmsJxUhz4o.png" alt="">
+                    <p><span>VR</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/svCuLCsIylj3EagzlFJm.png" alt="">
+                    <p><span>智能体脂秤</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/71700453489515400717.png" alt="">
+                    <p><span>穿戴配件</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>智能家具</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/CSkYxTgopbtV6bLHOxWq.png" alt="">
+                    <p><span>智能路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/httvqlH4j44xjH2Fkoeb.png" alt="">
+                    <p><span>移动路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/G1jaM3KiE5xuF7x0YZ7g.png" alt="">
+                    <p><span>智能存储</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/DJsv7p3cchO5rb1BawwY.png" alt="">
+                    <p><span>HiLink生态</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>智能屏</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix category-panels-1">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/jCygCJMv6ginekIsCBmu.png" alt="">
+                    <p><span>华为智慧屏</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/Y9Qxdhyx2CQ6vFxPY89r.png" alt="">
+                    <p><span>荣耀智慧屏</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/17005453489515450071.png" alt="">
+                    <p><span>智慧屏配件</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>耳机音箱</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/CSkYxTgopbtV6bLHOxWq.png" alt="">
+                    <p><span>智能路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/httvqlH4j44xjH2Fkoeb.png" alt="">
+                    <p><span>移动路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/G1jaM3KiE5xuF7x0YZ7g.png" alt="">
+                    <p><span>智能存储</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/DJsv7p3cchO5rb1BawwY.png" alt="">
+                    <p><span>HiLink生态</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>配件</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix category-panels-2">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/CSkYxTgopbtV6bLHOxWq.png" alt="">
+                    <p><span>智能路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/httvqlH4j44xjH2Fkoeb.png" alt="">
+                    <p><span>移动路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/G1jaM3KiE5xuF7x0YZ7g.png" alt="">
+                    <p><span>智能存储</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/DJsv7p3cchO5rb1BawwY.png" alt="">
+                    <p><span>HiLink生态</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/CSkYxTgopbtV6bLHOxWq.png" alt="">
+                    <p><span>智能路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/httvqlH4j44xjH2Fkoeb.png" alt="">
+                    <p><span>移动路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/G1jaM3KiE5xuF7x0YZ7g.png" alt="">
+                    <p><span>智能存储</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/DJsv7p3cchO5rb1BawwY.png" alt="">
+                    <p><span>HiLink生态</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/CSkYxTgopbtV6bLHOxWq.png" alt="">
+                    <p><span>智能路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/G1jaM3KiE5xuF7x0YZ7g.png" alt="">
+                    <p><span>智能存储</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>生态产品</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix category-panels-2">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/CSkYxTgopbtV6bLHOxWq.png" alt="">
+                    <p><span>智能路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/httvqlH4j44xjH2Fkoeb.png" alt="">
+                    <p><span>移动路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/G1jaM3KiE5xuF7x0YZ7g.png" alt="">
+                    <p><span>智能存储</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/DJsv7p3cchO5rb1BawwY.png" alt="">
+                    <p><span>HiLink生态</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/CSkYxTgopbtV6bLHOxWq.png" alt="">
+                    <p><span>智能路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/httvqlH4j44xjH2Fkoeb.png" alt="">
+                    <p><span>移动路由</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/eXsJchzxTzKRTnevFe0r.png" alt="">
+                    <p><span>智能音箱</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/G1jaM3KiE5xuF7x0YZ7g.png" alt="">
+                    <p><span>智能存储</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/DJsv7p3cchO5rb1BawwY.png" alt="">
+                    <p><span>HiLink生态</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/G1jaM3KiE5xuF7x0YZ7g.png" alt="">
+                    <p><span>智能存储</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
           <li class="category-item">
             <a href="#"><span>增值服务&其他</span><i>&gt;</i></a>
+            <div class="menu_ category-panels clearfix">
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/ZQnJL2WVUmZvVDkFIDRE.png" alt="">
+                    <p><span>华为视频卡</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/druWEKy6zCanbd02FQhl.png" alt="">
+                    <p><span>花币卡</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/qTEFwRvC8TEQ6qyHvIoB.png" alt="">
+                    <p><span>华为音乐卡</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/ppk5HSXix5wsEv4KY0KQ.png" alt="">
+                    <p><span>华为云空间</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/8J0Q5RpbK23FoBD4nX2h.png" alt="">
+                    <p><span>电池更换服务</span></p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu clearfix left">
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/navigation/alMghfvLjM8qE4wuTjY4.png" alt="">
+                    <p><span>服务器</span></p>
+                  </a>
+                </li>
+                <li class="subcate-item">
+                  <a href="#">
+                    <img src="https://res.vmallres.com/pimages//pages/frontCategory/9xgKp8DlHGYOJTcuc4Qx.png" alt="">
+                    <p><span>AI 计算平台</span></p>
+                  </a>
+                </li>
+                <li class="subcate-btn"><a href="#" target='_blank'>查看全部</a></li>
+              </ul>
+            </div>
           </li>
         </ol>
       </div>
@@ -314,6 +948,211 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+      <!-- 精品推荐 -->
+      <div class="b">
+        <div class="layout">
+          <div class="title">
+            <h2>精品推荐</h2>
+          </div>
+          <!-- 轮播图 -->
+          <div class="swipers">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <ul class="grid-list clearfix">
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6901443320202/428_428_A8033BCC8CCFFF9199371E71953A1B8B9730D5ACACA293D0mp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">3K 触控屏</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6972453169693/428_428_B44197A568DF33725A00C91C919E4D673253D40DA2846C28mp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6941487204977/428_428_9854D71AF36A4AD887D175D66190303641FABF706E102EE6mp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">5G新品</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6941487202256/428_428_CAEB4B495D814F32C132C8E65B45EBA5FEACC985B5D26A37mp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">新品火爆预订中</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6901443414277/428_428_8D4CA852B05FD61B83CC56E25A8FE1331DA7C16C76481D44mp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">新品上市</span></em></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <ul class="grid-list clearfix">
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6901443387588/428_428_1293C2C791F87BE0948D95135021BC202D4B20A735051BDFmp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">3K 触控屏</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6901443344697/428_428_616DE7DA2AA39EE71B197C986CB09F7A6D2E7C357EF6E12Cmp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6972453167880/428_428_402A96A0183A6ACBF7A0E15B06C8C8ED98E1750C9D6A122Dmp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">5G新品</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6972453166555/428_428_C79B4D644290EA71DC3C0CC105B77D471608BB055EA5A34Emp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">新品火爆预订中</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6941487204663/428_428_F934DED52CF13A08A05D707066DBF2BF3E1214C545FC7C6Amp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">新品上市</span></em></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <ul class="grid-list clearfix">
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6972453160997/428_428_184B441A9E325CEB3B9DB407369725D3B269072768467E7Dmp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">3K 触控屏</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6901443403011/428_428_A527FAFACA39029CB05262367AFDBAE6729FFFE0515F92D4mp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6972453166197/428_428_7C7E78048455B07559798278A92C754F763D76B84680900Emp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">5G新品</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6901443404742/428_428_0A42B25669DB37B02A8939D1416868D0A54CF9821F961EAFmp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">新品火爆预订中</span></em></div>
+                      </a>
+                    </li>
+                    <li class="grid-items left">
+                      <a href="#" class="thumb">
+                        <div class="grid-info">
+                          <p class="grid-img"><img src="https://res0.vmallres.com/pimages//product/6972453166623/428_428_3BEC2C42E7A4A37E60FDC56465F3AF18E3EC0FC7F4D09B15mp.png" alt=""></p>
+                          <p class="grid-desc">预订最高省200元</p>
+                        </div>
+                        <div class="grid-title">HUAWEI WATCH GT 2</div>
+                        <div class="grid-price">¥1488</div>
+                        <div class="grid-tips"><em class="thumb"><span class="color1">新品上市</span></em></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="swiper-button-prev grid-btn"></div>
+            <div class="swiper-button-next grid-btn"></div>
+        </div>
+        </div>
+      </div>
+      <!-- 广告轮播图 -->
+      <div class="home-banner">
+        <div class="layout">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="./img/img1.jpg" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="./img/img2.jpg" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="./img/img3.jpg" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="./img/img4.png" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="./img/img5.jpg" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="./img/img6.jpg" /></a></div>
+            </div>
+            <div class="swiper-pagination" id="swipers"></div>
           </div>
         </div>
       </div>

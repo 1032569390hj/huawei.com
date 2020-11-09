@@ -21,3 +21,8 @@ comtainer.on('mouseenter', function() {
 comtainer.on('mouseleave', function() {
   mySwiper.startAutoplay();
 });
+
+var mySwiper = new Swiper('.swipers', {
+  prevButton:'.swiper-button-prev',
+  nextButton:'.swiper-button-next',
+})

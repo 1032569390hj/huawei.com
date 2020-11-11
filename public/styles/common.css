@@ -32,7 +32,7 @@ a{
   color: #000;
   text-decoration: none;
 }
-em {
+em,i{
   font-style: normal;
   font-weight: normal;
 }

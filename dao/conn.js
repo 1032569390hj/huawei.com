@@ -3,7 +3,7 @@ const pool = mysql.createPool({
   connectionLimit: 10, // 最大连接数
   host: 'localhost',
   user: 'root',
-  password: '',
+  password: 'root',
   database: 'huawei'
 });
 

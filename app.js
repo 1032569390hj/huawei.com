@@ -5,6 +5,7 @@ const createError = require('http-errors');
 
 const app = express();
 const usersRouter = require('./router/users');
+const productRouter = require('./router/product');
 
 let conf = {
   port: 8888,
@@ -20,6 +21,7 @@ app.use(express.urlencoded({ extended: true })); // post表单数据解析成jso
 app.use(cookieParser());  //cookie在所有路由中间件使用
 
 app.use('/users', usersRouter);
+app.use('/product', productRouter);
 
 app.use(function(req, res, next) {
   next(createError(404));

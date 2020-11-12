@@ -1,0 +1,193 @@
+#hw-shopcar .shortcut {
+  background: #fff;
+}
+#hw-shopcar .shortcut #hds > li::before {
+  background: #afafaf;
+}
+#hw-shopcar .shortcut #hds > li::before > a {
+  color: #afafaf;
+}
+#hds > li > a:hover {
+  color: red;
+}
+.order-header .lt > a {
+  display: block;
+  margin-top: 8px;
+}
+.order-header .lt > a > img {
+  width: 120px;
+  height: 36px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.order-header .lt > a > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 26px;
+  font-size: 22px;
+  line-height: 36px;
+}
+.shopcar-mains {
+  background: #f5f5f5;
+  margin-top: 10px;
+}
+.shopcar-mains .sc-pro-title {
+  background: #fff;
+  line-height: 40px;
+  padding-left: 40px;
+  color: #a4a4a4;
+  display: flex;
+  font-size: 12px;
+}
+.shopcar-mains .sc-pro-title > label {
+  height: 42px;
+  width: 150px;
+}
+.shopcar-mains .sc-pro-title > label input {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.shopcar-mains .sc-pro-title > label span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.shopcar-mains .sc-pro-title > ul {
+  height: 42px;
+}
+.shopcar-mains .sc-pro-title > ul > li {
+  float: left;
+  width: 100px;
+  margin-left: 30px;
+  min-height: 14px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 42px;
+}
+.shopcar-mains .sc-pro-title > ul > li:nth-of-type(1) {
+  width: 450px;
+  text-align: left;
+}
+.shopcar-mains .cart-form .sc-pro {
+  color: #3a3a3a;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list {
+  background: #fff;
+  padding-left: 40px;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list > label {
+  float: left;
+  margin: 43px 3px 0 0;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list > label > input {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area {
+  float: left;
+  width: 1100px;
+  font-size: 14px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main {
+  margin-bottom: 18px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > a {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  font-size: 14px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > a > img {
+  width: 100%;
+  height: 100%;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul {
+  float: left;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li {
+  width: 450px;
+  text-align: left;
+  margin-left: 0;
+  float: left;
+  min-height: 14px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li:nth-of-type(2) {
+  width: 140px;
+  margin-left: 10px;
+  margin-right: -20px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li:nth-of-type(3) {
+  width: 80px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li:nth-of-type(5) {
+  width: 50px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li > a {
+  margin-bottom: 2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 20px;
+  position: relative;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #3a3a3a;
+  font-size: 14px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li > p {
+  color: #666;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 17px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-label > span {
+  font-size: 14px;
+  color: #ca141d;
+  line-height: 18px;
+  padding: 0 8px;
+  margin-right: 8px;
+  border: 1px solid #ca141d;
+  float: left;
+  margin-top: 6px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-price {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-stock-text {
+  width: 42px;
+  height: 20px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-stock-btn {
+  width: 86px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-stock-btn a {
+  width: 21px;
+  height: 20px;
+  line-height: 19px;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  color: #717171;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-stock-btn a:nth-of-type(2) {
+  float: right;
+}
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul .p-price-total {
+  float: left;
+  width: 100px;
+  margin-left: 30px;
+  min-height: 14px;
+  text-align: center;
+  color: #ca141d;
+  font-weight: 700;
+}

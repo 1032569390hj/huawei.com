@@ -11,4 +11,14 @@ router.route('/getProducts')
         });
     });
 
+router.route('/getItem')
+    .get((req, res, next) => {
+        let sql = `select * from product where id=${req.query.id}`;
+
+        conn.query(sql, (err, result) => {
+            if (err) console.log(err);
+            res.json(result);
+        })
+    })
+
 module.exports = router;

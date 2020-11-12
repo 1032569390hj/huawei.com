@@ -1,3 +1,4 @@
+
 (function () {
 
     var Magnifier = function (ele, obj) {
@@ -72,19 +73,12 @@ window.addEventListener('load', function () {
                 '../../img/p1-3.png',
                 '../../img/p1-4.png',
                 '../../img/p1-5.png',
-            ],
-            'small': [
-                '../../img/p1-1.png',
-                '../../img/p1-2.png',
-                '../../img/p1-3.png',
-                '../../img/p1-4.png',
-                '../../img/p1-5.png',
             ]
         };
 
         //插入小图片
         var arr = [];
-        imgArr['small'].forEach(function (ele) {
+        imgArr['big'].forEach(function (ele) {
             arr.push('<li class=\'img\' style=\'background-image:url(' + ele + ')\'></li>')
         });
         smallImgUl.innerHTML = arr.join('');
@@ -96,10 +90,9 @@ window.addEventListener('load', function () {
         smallImgUl.style.width = imgList.length * smallImgWidth + 'px';
 
         //获取索引
-        function getIndex(item) {
-            return Array.prototype.indexOf.call(imgList, item);
-        };
-
+        // function getIndex(item) {
+        //     return Array.prototype.indexOf.call(imgList, item);
+        // };
         //初始化展示的大图和小图以及相关样式
         initImg();
         function initImg() {
@@ -112,7 +105,8 @@ window.addEventListener('load', function () {
 
         //鼠标移入事件
         smallImgUl.addEventListener('mouseover', function (e) {
-            i = getIndex(e.target);
+            i = Array.prototype.indexOf.call(imgList, e.target)
+            // i = getIndex(e.target);
             initImg();
         });
 

@@ -1,5 +1,6 @@
 import './library/jquery.js';
 import './library/swiper-3.4.2.jquery.min.js';
+import { baseUrl } from './library/config.js';
 import './library/jquery.lazyload.min.js';
 
 //第一个轮播图
@@ -14,7 +15,7 @@ let mySwiper = new Swiper('.swiper-container', {
   fade: {
     crossFade: true,
   }
-})
+});
 //鼠标悬停时停止轮播
 let comtainer = $('.swiper-container');
 comtainer.on('mouseenter', function() {
@@ -37,7 +38,7 @@ let bannerSwiper = new Swiper('#bannerswiper', {
   fade: {
     crossFade: true,
   }
-})
+});
 
 //商品轮播
 let listSwiper = new Swiper('.swipers', {
@@ -48,7 +49,34 @@ let listSwiper = new Swiper('.swipers', {
 var fdline = new Swiper('.fd-line',{
   prevButton:'.swiper-button-prev',
   nextButton:'.swiper-button-next',
-  })
+  });
+
+
+(function() {
+  $.ajax({
+      type: "get",
+      url: `${baseUrl}/product/getProducts`,
+      dataType: "json",
+      success: function(res) {
+          // 获得数据后进行字符串拼接
+          let tempLi = '';
+          res.forEach((elm, i) => {
+
+              let picture = JSON.parse(elm.picture);
+              console.log(elm,'ll');
+              let imgs = picture[0].src;
+
+              tempLi += `<li>
+                <a href="../html/products.html?id=${elm.id}">
+                  <img src="${imgs}" alt="">
+                </a>
+              </li>`
+          });
+
+          $('.onemain').append(tempLi);
+      }
+  });
+})();
 
 //图片懒加载
 $(function() {

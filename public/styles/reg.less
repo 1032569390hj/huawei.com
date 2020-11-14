@@ -87,6 +87,8 @@
         .hwid-reg-detail {
             padding: 48px 208px 30px;
             background: #fff;
+            display: none;
+            position: relative;
             .hwid-registerTitle {
                 text-align: center;
                 margin: 8px 0 48px;
@@ -123,16 +125,42 @@
                     font-size: 12px;
                 }
                 .btn-group {
-                    right: -173px;
+                    right: -226px;
                     height: 100%;
                     padding-top: 4px;
-                    >button {
-                        background: transparent;
-                        border: 0;
-                        
-                    }
+                    background: transparent;
+                    border: 0;
+                    outline: none;
                 }
                 
+            }
+            .phoneinfo {
+                position: absolute;
+                right: 94px;
+                top: 251px;
+                font-size: 12px;
+                color: rgb(10, 95, 10);
+            }
+            .shortinfo {
+                position: absolute;
+                right: 94px;
+                top: 309px;
+                font-size: 12px;
+                color: rgb(10, 95, 10);
+            }
+            .psdinfo {
+                position: absolute;
+                right: 94px;
+                top: 360px;
+                font-size: 12px;
+                color: rgb(18, 201, 18);
+            }
+            .refpsdinfo {
+                position: absolute;
+                right: 94px;
+                top: 416px;
+                font-size: 12px;
+                color: rgb(18, 201, 18);
             }
             input {
                 text-indent: 18px;
@@ -154,9 +182,13 @@
                     color: #fff;
                     text-transform: uppercase;
                     padding: 0 12.8px;
+                    outline: none;
                 }
             }
             
+        }
+        .hwid-reg-detail.active {
+            display: block;
         }
     }
 }

@@ -87,6 +87,8 @@
 .reg-tabs .show .hwid-reg-detail {
   padding: 48px 208px 30px;
   background: #fff;
+  display: none;
+  position: relative;
 }
 .reg-tabs .show .hwid-reg-detail .hwid-registerTitle {
   text-align: center;
@@ -125,13 +127,40 @@
   font-size: 12px;
 }
 .reg-tabs .show .hwid-reg-detail .hwid-city .btn-group {
-  right: -173px;
+  right: -226px;
   height: 100%;
   padding-top: 4px;
-}
-.reg-tabs .show .hwid-reg-detail .hwid-city .btn-group > button {
   background: transparent;
   border: 0;
+  outline: none;
+}
+.reg-tabs .show .hwid-reg-detail .phoneinfo {
+  position: absolute;
+  right: 94px;
+  top: 251px;
+  font-size: 12px;
+  color: #0a5f0a;
+}
+.reg-tabs .show .hwid-reg-detail .shortinfo {
+  position: absolute;
+  right: 94px;
+  top: 309px;
+  font-size: 12px;
+  color: #0a5f0a;
+}
+.reg-tabs .show .hwid-reg-detail .psdinfo {
+  position: absolute;
+  right: 94px;
+  top: 360px;
+  font-size: 12px;
+  color: #12c912;
+}
+.reg-tabs .show .hwid-reg-detail .refpsdinfo {
+  position: absolute;
+  right: 94px;
+  top: 416px;
+  font-size: 12px;
+  color: #12c912;
 }
 .reg-tabs .show .hwid-reg-detail input {
   text-indent: 18px;
@@ -154,6 +183,10 @@
   color: #fff;
   text-transform: uppercase;
   padding: 0 12.8px;
+  outline: none;
+}
+.reg-tabs .show .hwid-reg-detail.active {
+  display: block;
 }
 .footer {
   background: rgba(0, 0, 0, 0.05);

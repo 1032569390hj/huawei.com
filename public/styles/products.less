@@ -615,7 +615,7 @@ body {
         }
         .product-operation {
             .product-stock {
-                input {
+                #num {
                     width: 41px;
                     height: 44px;
                     line-height: 44px;
@@ -627,40 +627,39 @@ body {
             .product-buttonmain {
                 display: flex;
                 margin-left: 20px;
-                a {
+                #additem {
+                    width: 172px;
+                    height: 46px;
+                    font-size: 18px;
+                    line-height: 46px;
+                    text-align: center;
+                    color: #fff;
+                    border-radius: 2px;
+                    border: 0;
+                    cursor: pointer;
                     margin-right: 10px;
-                    &:nth-of-type(1)  {
-                        display: block;
-                        background: #fc600c;
-                        width: 172px;
-                        height: 46px;
-                        font-size: 18px;
-                        line-height: 46px;
-                        text-align: center;
-                        color: #fff;
-                        border-radius: 2px;
-                        border: 0;
-                        cursor: pointer;
-                        &:hover {
-                            background: rgb(241, 182, 71);
-                        }
+                    outline: none;
+                    background: rgb(255, 145, 0);
+                    &:hover {
+                        background: #e6bc49;
                     }
-                    &:nth-of-type(2) {
-                        display: block;
-                        background: #ca151d;
-                        width: 172px;
-                        height: 46px;
-                        font-size: 18px;
-                        line-height: 46px;
-                        text-align: center;
-                        color: #fff;
-                        border-radius: 2px;
-                        border: 0;
-                        cursor: pointer;
-                        &:hover {
-                            background: #f03535;
-                        }
-                    }
+                }
+                >a{
+                    margin-right: 10px;
+                    display: inline-block;
+                    background: #ca151d;
+                    width: 172px;
+                    height: 46px;
+                    font-size: 18px;
+                    line-height: 46px;
+                    text-align: center;
+                    color: #fff;
+                    border-radius: 2px;
+                    border: 0;
+                    cursor: pointer;
+                    &:hover {
+                        background: #f03535;
+                    }  
                 }
             }
         }

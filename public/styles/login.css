@@ -66,7 +66,7 @@
   width: 1px;
   vertical-align: top;
 }
-.main .login-info .hwid-fullpage-r form .inp {
+.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .inp {
   padding: 0 13px;
   border: none;
   border-radius: 6px;
@@ -79,7 +79,7 @@
   color: #191919;
   margin-top: 20px;
 }
-.main .login-info .hwid-fullpage-r form .inp::before {
+.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .inp::before {
   content: "\f070";
   color: #aaa;
   font-size: 22px;
@@ -88,15 +88,15 @@
   right: 25px;
   top: 44px;
 }
-.main .login-info .hwid-fullpage-r form .smslogin {
+.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .smslogin {
   font-size: 16px;
   padding-top: 10px;
   text-align: left;
 }
-.main .login-info .hwid-fullpage-r form .smslogin a {
+.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .smslogin a {
   color: #007dff;
 }
-.main .login-info .hwid-fullpage-r form .login-btn {
+.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .login-btn {
   background: #CA141D;
   color: #fff;
   display: block;

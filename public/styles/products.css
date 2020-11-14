@@ -589,7 +589,7 @@ body {
   vertical-align: middle;
   color: red;
 }
-.mains .detailes .product-operation .product-stock input {
+.mains .detailes .product-operation .product-stock #num {
   width: 41px;
   height: 44px;
   line-height: 44px;
@@ -601,12 +601,7 @@ body {
   display: flex;
   margin-left: 20px;
 }
-.mains .detailes .product-operation .product-buttonmain a {
-  margin-right: 10px;
-}
-.mains .detailes .product-operation .product-buttonmain a:nth-of-type(1) {
-  display: block;
-  background: #fc600c;
+.mains .detailes .product-operation .product-buttonmain #additem {
   width: 172px;
   height: 46px;
   font-size: 18px;
@@ -616,12 +611,16 @@ body {
   border-radius: 2px;
   border: 0;
   cursor: pointer;
+  margin-right: 10px;
+  outline: none;
+  background: #ff9100;
 }
-.mains .detailes .product-operation .product-buttonmain a:nth-of-type(1):hover {
-  background: #f1b647;
+.mains .detailes .product-operation .product-buttonmain #additem:hover {
+  background: #e6bc49;
 }
-.mains .detailes .product-operation .product-buttonmain a:nth-of-type(2) {
-  display: block;
+.mains .detailes .product-operation .product-buttonmain > a {
+  margin-right: 10px;
+  display: inline-block;
   background: #ca151d;
   width: 172px;
   height: 46px;
@@ -633,7 +632,7 @@ body {
   border: 0;
   cursor: pointer;
 }
-.mains .detailes .product-operation .product-buttonmain a:nth-of-type(2):hover {
+.mains .detailes .product-operation .product-buttonmain > a:hover {
   background: #f03535;
 }
 .product-tab {

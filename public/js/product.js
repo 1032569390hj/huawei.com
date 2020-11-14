@@ -215,11 +215,11 @@ import cookie from './library/cookie.js';
                 </div>
                 <div class='product-operation clearfix'>
                     <div class="product-stock left">
-                        <input type="number" placeholder="1" value="1" min="1" max="${res.num}">
+                        <input type="number" value="1" min="1" max="${res.num}" id="num">
                     </div>
                     <div class="product-buttonmain left">
-                        <a href="#" id="additem">加入购物车</a>
-                        <a href="#">立即下单</a>
+                        <input type="button" value="加入购物车" id="additem">
+                        <a href="../html/shop.html">立即下单</a>
                     </div>
                 </div>
             </div>

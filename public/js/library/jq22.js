@@ -57,8 +57,23 @@
     window.Magnifier = Magnifier;
 }());
 
-window.addEventListener('load', function () {
-
+window.addEventListener('load', async function () {
+    let id = location.search.split('=')[1]; // 获得商品id
+    let big = [];
+    await new Promise((resolve, reject) => {
+        $.ajax({
+            type: "get",
+            url: `http://localhost:8888/product/getItem`,
+            data: {id: id},
+            dataType: "json",
+            success: function(res) {
+                console.log(JSON.parse(res[0].picture),'ress');
+                big = JSON.parse(res[0].picture);
+                resolve();
+            }
+        });
+    });
+    
     (function () {
 
         var smallImgUl = document.querySelector('ul.small-img-ul'),
@@ -78,14 +93,14 @@ window.addEventListener('load', function () {
 
         //插入小图片
         var arr = [];
-        imgArr['big'].forEach(function (ele) {
-            arr.push('<li class=\'img\' style=\'background-image:url(' + ele + ')\'></li>')
+        big.forEach(function (ele) {
+            arr.push('<li class=\'img\' style=\'background-image:url(../../'+ ele.src + ')\'></li>')
         });
         smallImgUl.innerHTML = arr.join('');
 
 
-        var imgList = smallImgUl.children,
-            smallImgWidth = imgList[0].offsetWidth;
+        var imgList = smallImgUl.children;
+        var smallImgWidth = imgList[0].offsetWidth;
 
         smallImgUl.style.width = imgList.length * smallImgWidth + 'px';
 
@@ -100,7 +115,7 @@ window.addEventListener('load', function () {
                 ele.className = 'img';
             });
             imgList[i].className += ' active';
-            phoneDispaly.style.backgroundImage = 'url(' + imgArr['big'][i] + ')';
+            phoneDispaly.style.backgroundImage = 'url(../../' + big[i].src + ')';
         };
 
         //鼠标移入事件
@@ -120,7 +135,7 @@ window.addEventListener('load', function () {
 
         function moveEffect(e) {
             if (flag) {
-                magnifier.url = imgArr['big'][i];
+                magnifier.url = `../../${big[i].src}`;
                 magnifier.createRelativeBox();
                 flag = false;
             };

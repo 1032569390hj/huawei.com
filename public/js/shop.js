@@ -20,7 +20,7 @@ import { baseUrl } from './library/config.js';
             dataType: "json",
             success: function(res) {
                 let template = '';
-                console.log(res);
+                // console.log(res);
                 let sumPrice = 0;
                 let jians = 0;
                 res.forEach((elm, i) => {
@@ -29,13 +29,12 @@ import { baseUrl } from './library/config.js';
                     // 需要让cookie中的id和查询结果的id 一一对应
                     // 索引不同
                     let arr = shop.filter(val => val.id === elm.id);
-                    console.log(arr,'arr');
 
                     let picture = JSON.parse(elm.picture);
                     template += `
                         <div class="sc-pro-list clearfix">
                             <label class="checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" class="checklist" totaldata="${elm.price*arr[0].num}" name="checklist">
                             </label>
                             <div class="sc-pro-area">
                                 <div class="sc-pro-main clearfix">
@@ -48,15 +47,15 @@ import { baseUrl } from './library/config.js';
                                             <p>夏日彩虹 全网通 6GB+128GB 官方标配</p>
                                             <div class="p-label"><span>分期免息</span></div>
                                         </li>
-                                        <li id="p-price">￥${(elm.price).toFixed(2)}</li>
+                                        <li id="p-price"><span>￥</span><span class="pricenum">${(elm.price).toFixed(2)}</span></li>
                                         <li>
                                             <input type="text" class="p-stock-text" value=${arr[0].num} min="1" max="${elm.num}">
                                             <p class="p-stock-btn">
-                                                <a href="javascript:;" class="">−</a>
-                                                <a href="javascript:;" class="">+</a>
+                                                <span class="reduce">−</span>
+                                                <span class="add">+</span>
                                             </p>
                                         </li>
-                                        <li class="p-price-total">¥${(elm.price*arr[0].num).toFixed(2)}</li>
+                                        <li class="p-price-total"><span>¥</span><span class="p-total">${(elm.price*arr[0].num).toFixed(2)}</span></li>
                                         <li><a href="javascript:;" seed="cart-item-del" class="p-del">删除</a></li>
                                     </ul>
                                 </div>
@@ -95,25 +94,91 @@ import { baseUrl } from './library/config.js';
                             </div>
                         </div>
                     `;
-                    sumPrice += elm.price*arr[0].num;
-                    jians += Number(arr[0].num);
-                    console.log(arr[0].num);
+                    
                 });
+
+
                 let total = `
-                    <label class="checkbox"><input readonly="readonly" class="vam checked" type="checkbox"> 全选</label>
+                    <label class="checkbox"><input readonly="readonly" class="vam checked" type="checkbox" name="totalcheck"> 全选</label>
                     <a href="javascript:;">删除</a></div> <div class="sc-total-btn ">
                     <a href="javascript:;">立即结算</a></div> <div class="sc-total-price">
                     <p class="totals">
-                        <label>总计：</label>
-                        <span>¥&nbsp;${sumPrice.toFixed(2)}</span>
+                        总计:<label></label>
+                        ¥&nbsp;<span></span>
                         <em><b>不含运费</b></em>
                     </p>
-                    <div class="total-choose">已选择<em>${jians}</em>件商品，优惠:<span>¥&nbsp;0.00</span></div>
+                    <div class="total-choose">已选择<em class="totalnums"></em>件商品，优惠:<span>¥&nbsp;0.00</span></div>
                 `;
+
+                $('.shopcar-mains').on('click', function(e) {
+                    let target = e.target;
+                    // console.dir(target);
+                    if (target.name === 'allcheck' || target.name === 'totalcheck') {
+                        $('.sc-pro-list .checklist').each((index, elm) => {
+                            $(elm).attr('checked',true);
+                        });
+                        getTotalPrice();
+                        getTotalnum()
+                    };
+                    if (target.name === 'checklist') {
+                        getTotalPrice();
+                        getTotalnum()
+                    };
+                    if (target.className === 'add') {
+                        let numInput = $(target).parent('.p-stock-btn').prev();
+                        let addnum = Number(numInput.val());
+                        addnum++;
+                        numInput[0].value = addnum;
+                        let pricenum = Number($(target).parent().parent().prev().find('.pricenum').html())*addnum;
+                        $(target).parent().parent().next().find('.p-total').html(pricenum);
+                        $(target).parents('.sc-pro-list').find('.checklist').attr('totaldata',pricenum);
+                        getTotalPrice();
+                        getTotalnum();
+                    };
+                    if (target.className === 'reduce') {
+                        let numInput = $(target).parent('.p-stock-btn').prev();
+                        let addnum = Number(numInput.val());
+                        if (addnum > 0) {
+                            addnum--;
+                        };
+                        numInput[0].value = addnum;
+                        let pricenum = Number($(target).parent().parent().prev().find('.pricenum').html())*addnum;
+                        $(target).parent().parent().next().find('.p-total').html(pricenum);
+                        $(target).parents('.sc-pro-list').find('.checklist').attr('totaldata',pricenum);
+                        getTotalPrice();
+                        getTotalnum();
+                    };
+                });
+
                 $('.sc-total-control').append(total);
                 $('.sc-pro').append(template);
-
+                getTotalPrice();
+                getTotalnum();
             }
         });
     }
+
+    function getTotalPrice() {
+        let checklist = $('.sc-pro .checklist');
+        let sum = 0;
+        checklist.each((index, item) => {
+            if($(item)[0].checked) {
+                sum = sum + Number($(item).attr('totaldata'));
+            }
+        });
+        $('.totals>span').html(sum);
+    };
+
+    function getTotalnum() {
+        let totalnums = $('.p-stock-text');
+        let checklist = $('.sc-pro .checklist');
+        let sums = 0;
+        checklist.each((index, item) => {
+            if($(item)[0].checked) {
+                sums += Number($(item).parents('.sc-pro-list').find('.p-stock-text').val());
+            }
+        });
+        $('.totalnums').html(sums);
+    };
+    
 })();

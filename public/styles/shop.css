@@ -170,7 +170,7 @@
   top: -24px;
   left: 6px;
 }
-.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-stock-btn a {
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-stock-btn span {
   width: 21px;
   height: 22px;
   line-height: 19px;
@@ -180,8 +180,9 @@
   color: #717171;
   border: 1px solid #717171;
   border-right: 0;
+  cursor: pointer;
 }
-.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-stock-btn a:nth-of-type(2) {
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-stock-btn span:nth-of-type(2) {
   float: right;
   border-right: 1px solid #717171;
   border-left: 0;

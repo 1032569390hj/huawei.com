@@ -110,32 +110,33 @@ import { baseUrl } from './library/config.js';
                     <div class="total-choose">已选择<em class="totalnums"></em>件商品，优惠:<span>¥&nbsp;0.00</span></div>
                 `;
 
+                //利用事件代理实现事件绑定功能 给未来元素添加事件
                 $('.shopcar-mains').on('click', function(e) {
                     let target = e.target;
                     // console.dir(target);
-                    if (target.name === 'allcheck' || target.name === 'totalcheck') {
-                        $('.sc-pro-list .checklist').each((index, elm) => {
+                    if (target.name === 'allcheck' || target.name === 'totalcheck') { //当点击到全选按钮时
+                        $('.sc-pro-list .checklist').each((index, elm) => { //给每件商品前的复选框设置为选中状态
                             $(elm).attr('checked',true);
                         });
-                        getTotalPrice();
-                        getTotalnum()
+                        getTotalPrice(); //调用总的价格函数
+                        getTotalnum(); //调用总的计数函数
                     };
-                    if (target.name === 'checklist') {
-                        getTotalPrice();
-                        getTotalnum()
+                    if (target.name === 'checklist') {  //当点击到每件商品前的复选框按钮时
+                        getTotalPrice(); //调用总的价格函数
+                        getTotalnum(); //调用总的计数函数
                     };
-                    if (target.className === 'add') {
-                        let numInput = $(target).parent('.p-stock-btn').prev();
+                    if (target.className === 'add') {  //当点击加号时
+                        let numInput = $(target).parent('.p-stock-btn').prev(); //选中当前元素指定父元素的上一个兄弟元素 商品数量
                         let addnum = Number(numInput.val());
                         addnum++;
                         numInput[0].value = addnum;
-                        let pricenum = Number($(target).parent().parent().prev().find('.pricenum').html())*addnum;
+                        let pricenum = Number($(target).parent().parent().prev().find('.pricenum').html())*addnum; //计算选中这行商品的总价
                         $(target).parent().parent().next().find('.p-total').html(pricenum);
-                        $(target).parents('.sc-pro-list').find('.checklist').attr('totaldata',pricenum);
+                        $(target).parents('.sc-pro-list').find('.checklist').attr('totaldata',pricenum);  //给当前选中商品的复选框自定义属性和属性值 让他的属性值与选中商品的总价一样
                         getTotalPrice();
                         getTotalnum();
                     };
-                    if (target.className === 'reduce') {
+                    if (target.className === 'reduce') { //当点击减号时
                         let numInput = $(target).parent('.p-stock-btn').prev();
                         let addnum = Number(numInput.val());
                         if (addnum > 0) {
@@ -152,12 +153,13 @@ import { baseUrl } from './library/config.js';
 
                 $('.sc-total-control').append(total);
                 $('.sc-pro').append(template);
+                //页面初始化
                 getTotalPrice();
                 getTotalnum();
             }
         });
-    }
-
+    };
+    //总价格函数
     function getTotalPrice() {
         let checklist = $('.sc-pro .checklist');
         let sum = 0;
@@ -168,7 +170,7 @@ import { baseUrl } from './library/config.js';
         });
         $('.totals>span').html(sum);
     };
-
+    //总的选择商品数量
     function getTotalnum() {
         let totalnums = $('.p-stock-text');
         let checklist = $('.sc-pro .checklist');

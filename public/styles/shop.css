@@ -135,6 +135,20 @@
   color: #3a3a3a;
   font-size: 14px;
 }
+.shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li .p-del {
+  margin-bottom: 2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 20px;
+  position: relative;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #3a3a3a;
+  font-size: 14px;
+  cursor: pointer;
+}
 .shopcar-mains .cart-form .sc-pro .sc-pro-list .sc-pro-area .sc-pro-main > ul > li > p {
   color: #666;
   overflow: hidden;
@@ -269,10 +283,11 @@
   margin-right: 10px;
   cursor: pointer;
 }
-.shopcar-mains #sc-tool .sc-total-tool .sc-total-control > a {
+.shopcar-mains #sc-tool .sc-total-tool .sc-total-control > span {
   float: left;
   margin-left: 20px;
   color: #3a3a3a;
+  cursor: pointer;
 }
 .shopcar-mains #sc-tool .sc-total-tool .sc-total-btn {
   float: right;

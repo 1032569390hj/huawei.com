@@ -140,6 +140,20 @@
                                     color: #3a3a3a;
                                     font-size: 14px;
                                 }
+                                .p-del {
+                                  margin-bottom: 2px;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    line-height: 20px;
+                                    position: relative;
+                                    max-height: 40px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    color: #3a3a3a;
+                                    font-size: 14px;
+                                    cursor: pointer;
+                                }
                                 >p {
                                     color: #666;
                                     overflow: hidden;
@@ -286,10 +300,11 @@
                         cursor: pointer;
                     }
                 }
-                >a {
+                >span {
                     float: left;
                     margin-left: 20px;
                     color: #3a3a3a;
+                    cursor: pointer;
                 }
             }
             .sc-total-btn {

@@ -63,7 +63,7 @@ window.addEventListener('load', async function () {
     await new Promise((resolve, reject) => {
         $.ajax({
             type: "get",
-            url: `http://localhost:8888/product/getItem`,
+            url: `http://10.31.162.15:8888/product/getItem`,
             data: {id: id},
             dataType: "json",
             success: function(res) {
@@ -81,15 +81,15 @@ window.addEventListener('load', async function () {
         
         var i = 0, flag = true;
 
-        var imgArr = {
-            'big': [
-                '../../img/p1-1.png',
-                '../../img/p1-2.png',
-                '../../img/p1-3.png',
-                '../../img/p1-4.png',
-                '../../img/p1-5.png',
-            ]
-        };
+        // var imgArr = {
+        //     'big': [
+        //         '../../img/p1-1.png',
+        //         '../../img/p1-2.png',
+        //         '../../img/p1-3.png',
+        //         '../../img/p1-4.png',
+        //         '../../img/p1-5.png',
+        //     ]
+        // };
 
         //插入小图片
         var arr = [];
@@ -100,6 +100,7 @@ window.addEventListener('load', async function () {
 
 
         var imgList = smallImgUl.children;
+        console.log(imgList[0],'imgList');
         var smallImgWidth = imgList[0].offsetWidth;
 
         smallImgUl.style.width = imgList.length * smallImgWidth + 'px';
@@ -118,8 +119,8 @@ window.addEventListener('load', async function () {
             phoneDispaly.style.backgroundImage = 'url(../../' + big[i].src + ')';
         };
 
-        //鼠标移入事件
-        smallImgUl.addEventListener('mouseover', function (e) {
+        //鼠标点击事件
+        smallImgUl.addEventListener('click', function (e) {
             i = Array.prototype.indexOf.call(imgList, e.target)
             // i = getIndex(e.target);
             initImg();

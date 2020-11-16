@@ -1,3 +1,11 @@
+body,
+html {
+  width: 100%;
+}
+#huawei {
+  width: 100%;
+  overflow: hidden;
+}
 .header {
   height: 41px;
   padding: 18px 0;
@@ -71,6 +79,8 @@
 }
 .hw-banner-swiper {
   height: 550px;
+  width: 100%;
+  overflow: hidden;
 }
 .hw-banner-swiper .swiper-wrapper {
   height: 100%;

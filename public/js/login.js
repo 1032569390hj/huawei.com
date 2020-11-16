@@ -43,8 +43,11 @@ $('.login-btn').on('click', function() {
             console.log(res);
             res.forEach(item => {
                 if (String(item.user_phone) === $('[name=phone]').val()) {
-                   alert('登录成功');
-                   window.location.href = '/';
+
+                    cookie.set('phone',$('[name=phone]').val());
+                    cookie.set('password',password);
+                    alert('登录成功');
+                    window.location.href = '/';
                 }
             })
         }

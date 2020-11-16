@@ -91,7 +91,6 @@ $(function() {
 });
 
 $('#submit').on('click', function() {
-    // 省略1万字的表单验证环节
 
     let password = $.md5($('[name=password]').val());
     $.ajax({

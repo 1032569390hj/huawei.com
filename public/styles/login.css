@@ -1,3 +1,7 @@
+.hw-login {
+  width: 100%;
+  overflow: hidden;
+}
 .head {
   background: rgba(0, 0, 0, 0.05);
   height: 38px;

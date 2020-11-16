@@ -10,7 +10,6 @@ import { baseUrl } from './library/config.js';
         shop = JSON.parse(shop);
 
         let idList = shop.map(elm => elm.id).join();
-
         $.ajax({
             type: "get",
             url: `${baseUrl}/product/getItems`,
@@ -20,7 +19,7 @@ import { baseUrl } from './library/config.js';
             dataType: "json",
             success: function(res) {
                 let template = '';
-                // console.log(res);
+                console.log(res);
                 let sumPrice = 0;
                 let jians = 0;
                 res.forEach((elm, i) => {
@@ -29,7 +28,7 @@ import { baseUrl } from './library/config.js';
                     // 需要让cookie中的id和查询结果的id 一一对应
                     // 索引不同
                     let arr = shop.filter(val => val.id === elm.id);
-
+                    console.log(arr,'arr');
                     let picture = JSON.parse(elm.picture);
                     template += `
                         <div class="sc-pro-list clearfix">
@@ -56,7 +55,7 @@ import { baseUrl } from './library/config.js';
                                             </p>
                                         </li>
                                         <li class="p-price-total"><span>¥</span><span class="p-total">${(elm.price*arr[0].num).toFixed(2)}</span></li>
-                                        <li><a href="javascript:;" seed="cart-item-del" class="p-del">删除</a></li>
+                                        <li><span seed="cart-item-del" class="p-del">删除</span></li>
                                     </ul>
                                 </div>
                                 <div class="p-service-main">
@@ -99,15 +98,19 @@ import { baseUrl } from './library/config.js';
 
 
                 let total = `
-                    <label class="checkbox"><input readonly="readonly" class="vam checked" type="checkbox" name="totalcheck"> 全选</label>
-                    <a href="javascript:;">删除</a></div> <div class="sc-total-btn ">
-                    <a href="javascript:;">立即结算</a></div> <div class="sc-total-price">
-                    <p class="totals">
-                        总计:<label></label>
-                        ¥&nbsp;<span></span>
-                        <em><b>不含运费</b></em>
-                    </p>
-                    <div class="total-choose">已选择<em class="totalnums"></em>件商品，优惠:<span>¥&nbsp;0.00</span></div>
+                    <label class="checkbox"><input readonly="readonly" class="vam checked totalcheck" type="checkbox" name="totalcheck"> 全选</label>
+                    <span class="deletes">删除</span>
+                    <div class="sc-total-btn">
+                        <a href="javascript:;">立即结算</a>
+                    </div>
+                    <div class="sc-total-price">
+                        <p class="totals">
+                            总计:<label></label>
+                            ¥&nbsp;<span></span>
+                            <em><b>不含运费</b></em>
+                        </p>
+                        <div class="total-choose">已选择<em class="totalnums"></em>件商品，优惠:<span>¥&nbsp;0.00</span></div>
+                    </div>
                 `;
 
                 //利用事件代理实现事件绑定功能 给未来元素添加事件
@@ -149,6 +152,12 @@ import { baseUrl } from './library/config.js';
                         getTotalPrice();
                         getTotalnum();
                     };
+
+                    if (target.className === 'p-del') {
+                        $($(target).parents('.sc-pro-list')[0]).remove();
+                        console.log(cookie.get('shop'),'ll');
+                    };
+                    
                 });
 
                 $('.sc-total-control').append(total);
@@ -177,6 +186,8 @@ import { baseUrl } from './library/config.js';
         let sums = 0;
         checklist.each((index, item) => {
             if($(item)[0].checked) {
+                console.log(Number(shop[index].num),'kk');
+                //sums += Number(shop[index].num);
                 sums += Number($(item).parents('.sc-pro-list').find('.p-stock-text').val());
             }
         });
